@@ -9,9 +9,11 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-    <title>G1</title>
+    <title>s2</title>
 
     <style>
         body {
@@ -170,24 +172,22 @@
         }
 
         .card-direito-section3 {
-            height: 300px;
-            background-color: rgba(0, 0, 0, 0.2);
-            background-image: url("images/imagem2.webp");
-            background-position: center center;
-            background-size: cover;
-            padding: 10px 20px;
+            height: 295px;
+            position: relative;
             border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-        } 
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
 
         .categoria2 {
             color: white;
             font-size: 16px;
             font-weight: 600;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);    
-            
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
 
         .titulo2 {
@@ -196,6 +196,130 @@
             font-weight: 900;
             line-height: 32px;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .child {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            background-position: center;
+            background-size: cover;
+            transition: all .5s;
+            background-repeat: no-repeat;
+        }
+
+        .child:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .card-direito-section3:hover .child,
+        .card-direito-section3:focus .child {
+            transform: scale(1.1);
+            transition: all .5s;
+        }
+
+        .bg1 {
+            background-image: url("images/imagem2.webp");
+        }
+
+        .bg2 {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            background-image: url("images/front.webp");
+            background-position: center;
+            background-size: cover;
+            transition: all .5s;
+            background-repeat: no-repeat;
+        }
+
+        .subtitulo2 {
+            color: white;
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 32px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            bottom: 10px;
+            padding: 5px;
+
+        }
+
+        .card-section-4 {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #c8c8c8;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            grid-column-gap: 16px;
+        }
+
+        .container-imagem-card-4 {
+            max-width: 390px;
+            flex: 1 1 100%;
+        }
+
+        .imagem-card-4 {
+            max-width: 100%;
+        }
+
+        .conatiner-conteudo {
+            padding: 8px 0;
+            max-width: 100%;
+            flex: 1 1 100%;
+        }
+
+        .categoria-card-4 {
+            color: #333333;
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 8px;
+        }
+
+        .titulo-card-4 {
+            color: #c4170c;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .descricao-card-4>ul {
+            padding: 16px;
+
+        }
+
+        .descricao-card-4>ul>li {
+            color: #999999;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .descricao-card-4>ul>li>span {
+            color: #c4170c;
+        }
+
+        .data-card-4 {
+            color: #555555;
+            font-size: 12px;
+        }
+
+        .resumo-card-4 {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 8px;
         }
     </style>
 
@@ -288,7 +412,7 @@
             </div>
         </div>
     </section>
-    <section class="sectiom3">
+    <section class="section3">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -312,19 +436,83 @@
                 <div class="col-6">
 
                     <div class="card-direito-section3">
+                        <div class="child bg1">
+                        </div>
+
                         <div class="categoria2">
                             'Um milagre'
                         </div>
                         <div class="titulo2 ">
                             Ex-BBB Rodrigo Mussi dá 1ª entrevista após acidente
                         </div>
+                    </div>
 
+                    <div class="card-direito-section3">
+                        <div class="child bg2">
+                        </div>
+
+
+                        <div class="categoria2">
+                            Festa da rainha
+                        </div>
+                        <div class="titulo2 ">
+                            Kate Middleton repete vestido de R$18 mil e homenageia Diana
+
+                            <div class="subtitulo2">
+                                Qual a função da monarquia e quem é quem na Familia Real
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="images/anuncio2.gif" class="img_anuncio" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="card-section-4">
+                        <div class="container-imagem-card-4">
+                            <img src="images/noticia3.webp" alt="" class="imagem-card-4">
+                        </div>
+                        <div class="container-conteudo">
+                            <div class="categoria-card-4">
+                                Violência no RJ
+                            </div>
+                            <div class="titulo-card-4">
+                                Bombeiro que fugia de deslizamento morre ao escorregar
+                                em lama
+                            </div>
+                            <div class="descricao-card-4">
+                                <ul>
+                                    <li><span>
+                                            veja quem são as vítimas identificadas até agora
+                                        </span></li>
+                                    <li><span>
+                                            Saiba como ajudar as vítimas das chuvas em Pernambuco
+                                        </span></li>
+                                </ul>
+                                <div class="data-card-4">
+                                    Há 1 hora - em Pernambuco
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
