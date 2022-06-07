@@ -273,7 +273,7 @@
             max-width: 100%;
         }
 
-        .conatiner-conteudo {
+        .container-conteudo {
             padding: 8px 0;
             max-width: 100%;
             flex: 1 1 100%;
@@ -320,6 +320,47 @@
             font-size: 16px;
             color: #555555;
             margin-bottom: 8px;
+        }
+
+        .menu-lateral {
+            border: 1px solid rgb(238, 238, 238);
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .cabecalho-menu-lateral {
+            padding: 24px;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(238, 238, 238);
+        }
+
+        .item-menu-lateral {
+            padding: 24px;
+            display: flex;
+            border-bottom: 1px solid rgb(238, 238, 238);
+        }
+
+        .texto-menu-lateral {
+            color: #c4170c;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .imagem-menu-lateral > img {
+            height: 94px;
+            width: 94px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .rodape-menu-lateral {
+            padding: 16px 24px;
+            color: #c4170c;
+            font-size: 14px;
+            font-weight: bold;
         }
     </style>
 
@@ -455,7 +496,7 @@
                         <div class="categoria2">
                             Festa da rainha
                         </div>
-                        <div class="titulo2 ">
+                        <div class="titulo2">
                             Kate Middleton repete vestido de R$18 mil e homenageia Diana
 
                             <div class="subtitulo2">
@@ -479,7 +520,7 @@
     <section class="section4">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-9">
                     <div class="card-section-4">
                         <div class="container-imagem-card-4">
                             <img src="images/noticia3.webp" alt="" class="imagem-card-4">
@@ -507,15 +548,105 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card-section-4">
+                        <div class="container-imagem-card-4">
+                            <img src="images/noticia6.webp" alt="" class="imagem-card-4">
+                        </div>
+                        <div class="container-conteudo">
+                            <div class="categoria-card-4">
+                                Violência no RJ
+                            </div>
+                            <div class="titulo-card-4">
+                                Caseiro é morto com tiro de fuzil de PM no Rio;
+                            </div>
+                            <div class="descricao-card-4">
+                                <div class="resumo-card-4">
+                                    Moradores protestam
+                                </div>
+                                <div class="data-card-4">
+                                    Há 1 hora - em Rio de janeiro
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section-4">
+                        <div class="container-imagem-card-4">
+                            <img src="images/bb.webp" alt="" class="imagem-card-4">
+                        </div>
+                        <div class="container-conteudo">
+                            <div class="categoria-card-4">
+                                Piquenique no quintal
+                            </div>
+                            <div class="titulo-card-4">
+                                Harry Megan divulgam foto de Lilibet em seu 1° aniversário
+                            </div>
+                            <div class="descricao-card-4">
+                                <div class="resumo-card-4">
+                                    Homenagem à Rainha Elizabeth
+                                </div>
+                                <div class="data-card-4">
+                                    Há 1 hora - em Reino Unido
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section-4">
+                        <div class="container-imagem-card-4">
+                            <img src="images/noticia7.webp" alt="" class="imagem-card-4">
+                        </div>
+                        <div class="container-conteudo">
+                            <div class="categoria-card-4">
+                                Amazonas
+                            </div>
+                            <div class="titulo-card-4">
+                                Quem são Bruno Pereira e Dom Phillips, que sumiram na Amazônia
+                            </div>
+                            <div class="descricao-card-4">
+                                <ul>
+                                    <li><span>
+                                            Há 15 anos no Brasill, jornalista prepara livro sobre a destruição da
+                                            Amazônia
+                                        </span></li>
+                                    <li><span>
+                                            SÔNIA BRIDI: Bruno foi afstadoda Funai por pressões do governo Bolsonaro
+                                        </span></li>
+                                    <li><span>
+                                            Dupla deveria ter voltado ontem de expedição; veja o que se sabe
+                                        </span></li>
+                                </ul>
+                                <div class="data-card-4">
+                                    Há 4 hora - em Amazonas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
+
+                <div class="col-3">
+                    <div class="menu-lateral">
+                        <div class="cabecalho-menu-lateral">
+                            Viu isso aqui?
+                        </div>
+                        <div class="item-menu-lateral">
+                            <div class="texto-menu-lateral">
+                                Ambber Head e Johnny Depp são condenados: atriz deve pagar US$ 10 milhões;
+                                ator, US$ 2 milhões
+                            </div>
+                            <div class="imagem-menu-lateral">
+                                <img src="images/noticia8.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="rodape-menu-lateral">
+                            Mais conteúdos recomendados <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </body>
 
 </html>
